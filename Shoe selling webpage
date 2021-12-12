@@ -1,0 +1,158 @@
+<!--RISHAB TALLA-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>travel agency</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="style.css">
+<style>
+    body{
+        font-family: 'Baloo Bhai',cursive;
+        color: rgb(191, 235, 34);
+        margin: 0px;
+        padding: 0px;
+        background-image: url(footwear.png);
+    }
+    .left{
+        display:inline block;
+           border: 2px solid rgb(231, 48, 109);
+           position: absolute;
+           left: 60px;
+           top: 20px;
+           background-color: black;
+    }
+    .left img{
+        width:  136px;
+    }
+    .left div{
+        line-height: 19px;
+        font-size: 26px;
+        text-align: center;
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 43px;
+        display:inline block;
+        border: 2px solid rgb(252, 3, 78);
+    }
+    .mid{
+        display: block;
+        width: 60%;
+        margin: 12px auto;
+        border: 2px solid green;
+        background-color: rgb(243, 19, 19);
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 25px;
+    }
+    .navbar li a{
+        color: rgba(245, 240, 238, 0.993);
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+    .navbar li a:hover , .navbar li a:active{
+        text-decoration: underline;
+        color: rgb(64, 7, 170);
+    }
+    .btn{
+        font-family: 'Baloo Bhai',cursive;
+        margin: 0px 9px;
+        background-color: rgb(243, 146, 20);
+        color: rgb(255, 255, 255);
+        padding: 4px 14px;
+        border:  2px solid gray;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: rgb(131, 45, 45);
+    }
+    .container{
+        border: 2px solid rgb(9, 231, 83);
+        margin:  106px 80px ;
+        padding: 75px;
+        width: 33%;
+        border-radius:  28px;
+        background-color: darkcyan;
+    }
+    .form-group input{
+        font-family: 'Baloo Bhai',cursive;
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+     display: block;
+     width: 23%;
+     margin: auto;
+    }
+</style>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+        <img src="shoe .png" alt="">
+        
+        </div>
+        
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li ><a href="#"> Home </a></li>
+                <li ><a href="#"> About us </a></li>
+                <li><a href="#"> Best QualityShoes </a></li>
+                <li><a href="#"> Contact us </a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+         <button class="btn"> Call us </button>
+         <button class="btn"> Email us </button>
+        </div> 
+        <div class=" container">
+           <h1>Buy QualityShoes at best prices from our store</h1> 
+           <form action="index.php" method="post">
+             <div class=" form-group">
+                 <input type="text"  placeholder= "Your Name" name="name" id="name">
+             </div>
+             <div class=" form-group">
+                <input type="text"  placeholder= "Age" name="age" id=" age">
+            </div> 
+            <div class=" form-group">
+                <input type="text" placeholder="Gender" name=" gender" id="gender">
+            </div>
+            <div class=" form-group">
+                <input type="text"  placeholder=" Phone number" name="phoneno" id="phoneno">
+            </div>
+            <div class=" form-group">
+                <input type="text"  placeholder= "Email ID" name="email" id="email">
+            </div>
+            <div class=" form-group">
+                <input type="text"  placeholder= "Address" name="address" id="address"> 
+            </div>
+               <button class="btn"> Submit</button>
+            </div>  
+           </form>
+        </div>
+    </header>
+</body>
+</html>
